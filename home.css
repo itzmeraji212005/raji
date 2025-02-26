@@ -1,0 +1,88 @@
+body{
+    font-family: Arial,sans-serif;
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    padding:20px;
+    text-align: center;
+}
+
+header h1{
+    margin:10 px 0;
+    color:rgb(255, 255, 255);
+}
+header h2{
+    margin:10px 0;
+    font-weight:normal;
+    color:rgba(255, 255, 255, 0);
+}
+nav {
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.sparkle-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #ff0099; /* Bright color for the button */
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.sparkle-button:hover {
+    background-color: #ff77bb; /* Lighter color on hover */
+}
+.sparkle-button:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 50%;
+    animation: sparkle 1.5s infinite;
+    z-index: 0;
+}
+
+.sparkle-button:hover:before {
+    animation: sparkle 0.5s forwards;
+}
+
+@keyframes sparkle {
+    0% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.sparkle-button span {
+    position: relative;
+    z-index: 1; /* Make text appear above the sparkles */
+}
+
+

@@ -1,0 +1,27 @@
+.header{
+    background-color:#f8f8f8;
+    border-bottom:2px solid black;
+    padding:20px;
+    position:relative;
+}
+.header h1{
+    margin:0;
+    display:inline-block;
+}
+.exit{
+    font-size:24px;
+    color:red;
+    position:absolute;
+    right:20px;
+    cursor:pointer;
+}
+.sidebar{
+    width:200px;
+    height:100%;
+    float:left;
+    padding:15px;
+}
+.content{
+    margin-left:220px;
+    padding:20px;
+}

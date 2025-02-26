@@ -1,0 +1,9 @@
+body{
+    background-image:url('v.png');
+    color:white;  
+}
+.header h1{
+    margin:0;
+    display:inline-block;
+    font-size:50px;  
+}

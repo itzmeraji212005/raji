@@ -1,0 +1,120 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Main heading styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff0099;
+}
+
+/* Candidate box styling */
+.candidate {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.candidate:hover {
+    background-color: #f0f0f0;
+}
+
+/* Candidate picture styling */
+.candidate-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Candidate name and position styling */
+.candidate h2 {
+    font-size: 1.2em;
+    color: #ff0099;
+}
+
+.candidate p {
+    font-size: 1em;
+    color: #ff0099;;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:#ff0099;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color:#ff0099;
+}
+
+/* Ensure the input radio is not displayed */
+input[type="radio"] {
+    display: none; /* Hide the radio buttons */
+}
+
+/* Custom radio button style */
+.candidate input[type="radio"] + label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px; /* Space for custom radio */
+}
+
+/* Create custom radio */
+.candidate input[type="radio"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ff0099; /* Radio border color */
+    border-radius: 50%; /* Circle */
+    background-color: white;
+}
+
+/* Create custom radio 'dot' when checked */
+.candidate input[type="radio"]:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px; /* Dot size */
+    height: 12px; /* Dot size */
+    border-radius: 50%; /* Circle */
+    background-color: #ff0099;/* Dot color */
+}

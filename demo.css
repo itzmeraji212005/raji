@@ -1,0 +1,160 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #3498db; /* Blue navbar */
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Added max-width */
+    margin: 0 auto;  /* Center the content */
+    padding: 0 20px; /* Added padding */
+}
+
+.navbar-brand a {
+    color: #fff;
+    font-size: 1.8em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    display: flex;
+}
+
+.navbar-start, .navbar-end {
+    display: flex;
+}
+
+.navbar-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Rounded corners */
+    margin: 0 5px; /* Spacing between links */
+}
+
+.navbar-item:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.hero .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero .title {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Darker heading color */
+}
+
+.hero .subtitle {
+    font-size: 1.3em;
+    color: #7f8c8d; /* Light gray subtitle */
+    margin-bottom: 30px;
+}
+
+/* Quotes Section */
+.quotes {
+    margin-bottom: 30px;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #555;
+    padding: 15px;
+    border-left: 5px solid #3498db; /* Blue quote border */
+    background-color: #f0f0f0; /* Light background for quote */
+    border-radius: 5px;
+}
+
+/* Visual Section (Image) */
+.visual {
+    margin-top: 40px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative; /* Or `fixed` if you want it to always stay at the bottom */
+    width: 100%;
+    bottom: 0;  /* Or `0` if position is fixed */
+    font-size: 0.9em;
+}
+
+/* Responsive Design (Example - Adjust breakpoints as needed) */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-menu {
+        margin-top: 10px;
+    }
+
+    .navbar-item {
+        padding: 10px 15px;
+        margin: 2px 0;
+    }
+
+    .hero .title {
+        font-size: 2.5em;
+    }
+
+    .hero .subtitle {
+        font-size: 1.1em;
+    }
+}
+.vote-container {
+    text-align: center;
+    background-color: white; /* White background for the container */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.vote-button {
+    text-decoration: none; /* Remove underline from link */
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border-radius: 5px; /* Rounded corners for button */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.vote-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
